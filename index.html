@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Spicy+Rice' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<h1>Simon Game</h1>
+<div class="row">
+    <div class="col-sm-6">
+        <h2>Difficulty:</h2>
+        <input type="radio" name="difficulty" value="easy" id="easy" checked="checked">Easy</input>
+        <input type="radio" name="difficulty" value="strict" id="strict">Strict
+    </div>
+    <div class="col-sm-6">
+        <h2>Goal</h2>
+
+        <input type="radio" name="winning" value="20" id="20" checked="checked">20 points to win
+        <input type="radio" name="winning" id="infinite" value="infinite">Infinite game
+        <br>
+    </div>
+</div>
+<br>
+
+<input type=SUBMIT value="Start Game" name="mySubmit" onClick='startGame()' id="start">
+<div class="result">Let's Play!</div>
+<div class="row">
+    <div class="blue btn"></div>
+    <div class="red btn"></div>
+</div>
+<div class="row">
+    <div class="yellow btn"></div>
+    <div class="green btn"></div>
+</div>
+<br>
+
+
+
+
+<script src="view.js"></script>
+<script src="model.js"></script>
+<script src="controller.js"></script>
+</body>
+</html>

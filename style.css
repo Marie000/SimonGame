@@ -1,0 +1,46 @@
+body {
+    margin:50px;
+    background-color:black;
+    color:white;
+    text-align:center;
+    font-family: 'Spicy Rice', cursive;
+    font-size:20px;
+}
+#easy,#strict,#twenty,#infinite{
+    margin:10px;
+}
+.blue.disabled{
+    background-color:blue;
+}
+h1{
+    font-size:45px;
+}
+#start{
+    color:black;
+    width:200px;
+    height:50px;
+    border-radius:20px;
+}
+
+.blue,.red,.yellow,.green{
+    width:200px;
+    height:200px;
+    margin:5px;
+}
+.blue{
+    background-color:blue;
+    border-radius:100% 0 0;
+}
+
+.red{
+    background-color:red;
+    border-radius:0 100% 0 0;
+}
+.yellow {
+    background-color:yellow;
+    border-radius:0 0 0 100%;
+}
+.green {
+    background-color:green;
+    border-radius:0 0 100% 0;
+}
