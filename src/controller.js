@@ -11,6 +11,11 @@ var computerController = {
     },
     makeMove:function(){
         this.generateRandom()
+    },
+    showMoves:function(array){
+        for (var i=0;i<array.length;i++){
+            setTimeout(function(){view.displayMoves(array[i])},600);
+        }
     }
 
 }
@@ -47,3 +52,5 @@ var userController = {
     }
 
 }
+
+computerController.showMoves([1,2,3,4])
